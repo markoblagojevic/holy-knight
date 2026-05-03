@@ -218,23 +218,23 @@ The project can be started using Docker Compose for easy setup and reproducibili
 
 ## Main Menu
 
-![Main-Menu Screen](docs/recent/Main-Menu.png)
+![Main Menu](docs/screenshots/main-menu.png)
+
 ## Battle Screen
 
-![Battle Screen](docs/recent/Battle.png)
+![Battle Screen](docs/screenshots/battle.png)
 
 ## Move Management
 
-![Move Screen](docs/recent/battle2.png)
+![Move Management](docs/screenshots/move-management.png)
 
 ## Victory Screen
 
-![Victory Screen](docs/recent/Victory.png)
+![Victory Screen](docs/screenshots/victory.png)
 
 ## Game Over Screen
 
-![Game-Over Screen](docs/recent/Game-Over.png)
-
+![Game Over](docs/screenshots/game-over.png)
 
 
 ---
