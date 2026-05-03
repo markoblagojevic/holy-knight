@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nordeus RPG Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+    <header>
+        <h1>HOLY KNIGHT</h1>
+        <p>Turn-based RPG Game</p>
+    </header>
+
+    <section id="main-menu" class="panel">
+        <h2>Main Menu</h2>
+        <button onclick="startRun()">Start New Run</button>
+    </section>
+
+    <section id="run-view" class="panel hidden">
+        <h2>Run Overview</h2>
+
+        <div id="hero-summary"></div>
+
+        <h3>Encounters</h3>
+        <div id="encounters"></div>
+
+        <button onclick="showMoveManagement()">Manage Moves</button>
+    </section>
+
+    <section id="move-management" class="panel hidden">
+        <h2>Move Management</h2>
+        <p>Select up to 4 learned moves.</p>
+
+        <div id="learned-moves"></div>
+
+        <button onclick="equipSelectedMoves()">Equip Selected Moves</button>
+        <button onclick="showRunView()">Back to Run</button>
+    </section>
+
+    <section id="battle-view" class="panel hidden">
+        <h2>Battle</h2>
+        <div id="turn-indicator" class="turn-indicator">
+            Your Turn
+        </div>
+
+        <div class="battle-grid">
+            <div id="hero-card" class="character-card hero-card">
+                <div id="hero-portrait" class="portrait">🛡️</div>
+                <h3 id="hero-name"></h3>
+                <p id="hero-hp"></p>
+                <div class="health-bar">
+                    <div id="hero-health-fill" class="health-fill"></div>
+                </div>
+            </div>
+
+            <div id="monster-card" class="character-card monster-card">
+                <div id="monster-portrait" class="portrait">👹</div>
+                <h3 id="monster-name"></h3>
+                <p id="monster-hp"></p>
+                <div class="health-bar">
+                    <div id="monster-health-fill" class="health-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="battle-content-grid">
+            <div class="moves-panel">
+                <h3>Moves</h3>
+                <div id="move-buttons"></div>
+            </div>
+
+            <div class="log-panel">
+                <h3>Battle Log</h3>
+                <div id="battle-log"></div>
+            </div>
+        </div>
+
+        <div id="battle-result-panel" class="result-panel hidden"></div>
+
+        <button id="back-to-run-button" class="hidden" onclick="showRunView()">
+            Back to Run
+        </button>
+    </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

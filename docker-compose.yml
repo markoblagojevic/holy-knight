@@ -1,0 +1,6 @@
+services:
+  rpg-backend:
+    build: .
+    container_name: rpg-backend
+    ports:
+      - "8080:8080"

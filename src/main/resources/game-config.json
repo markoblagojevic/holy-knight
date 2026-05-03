@@ -1,0 +1,308 @@
+{
+  "hero": {
+    "id": "hero-knight",
+    "name": "Knight",
+    "stats": {
+      "maxHealth": 120,
+      "currentHealth": 120,
+      "attack": 14,
+      "defense": 8,
+      "magic": 8
+    },
+    "moves": [
+      {
+        "id": "slash",
+        "name": "Slash",
+        "description": "Deals moderate physical damage.",
+        "type": "PHYSICAL",
+        "effectType": "DAMAGE",
+        "baseValue": 12,
+        "duration": 0
+      },
+      {
+        "id": "shield-up",
+        "name": "Shield Up",
+        "description": "Raises defense for 2 turns.",
+        "type": "STATUS",
+        "effectType": "BUFF_DEFENSE",
+        "baseValue": 5,
+        "duration": 2
+      },
+      {
+        "id": "battle-cry",
+        "name": "Battle Cry",
+        "description": "Raises attack for 2 turns.",
+        "type": "STATUS",
+        "effectType": "BUFF_ATTACK",
+        "baseValue": 5,
+        "duration": 2
+      },
+      {
+        "id": "second-wind",
+        "name": "Second Wind",
+        "description": "Heals the hero. Scales with Magic.",
+        "type": "MAGIC",
+        "effectType": "HEAL",
+        "baseValue": 15,
+        "duration": 0
+      }
+    ]
+  },
+  "monsters": [
+    {
+      "id": "goblin-warrior",
+      "name": "Goblin Warrior",
+      "stats": {
+        "maxHealth": 80,
+        "currentHealth": 80,
+        "attack": 12,
+        "defense": 5,
+        "magic": 3
+      },
+      "experienceReward": 60,
+      "aiStrategy": "smart",
+      "moves": [
+        {
+          "id": "rusty-blade",
+          "name": "Rusty Blade",
+          "description": "Deals moderate physical damage.",
+          "type": "PHYSICAL",
+          "effectType": "DAMAGE",
+          "baseValue": 10,
+          "duration": 0
+        },
+        {
+          "id": "dirty-kick",
+          "name": "Dirty Kick",
+          "description": "Deals light damage and lowers defense.",
+          "type": "PHYSICAL",
+          "effectType": "DEBUFF_DEFENSE",
+          "baseValue": 4,
+          "duration": 2
+        },
+        {
+          "id": "frenzy",
+          "name": "Frenzy",
+          "description": "Raises attack for 2 turns.",
+          "type": "STATUS",
+          "effectType": "BUFF_ATTACK",
+          "baseValue": 5,
+          "duration": 2
+        },
+        {
+          "id": "headbutt",
+          "name": "Headbutt",
+          "description": "Deals heavy physical damage.",
+          "type": "PHYSICAL",
+          "effectType": "DAMAGE",
+          "baseValue": 16,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "id": "giant-spider",
+      "name": "Giant Spider",
+      "stats": {
+        "maxHealth": 95,
+        "currentHealth": 95,
+        "attack": 14,
+        "defense": 7,
+        "magic": 2
+      },
+      "experienceReward": 80,
+      "aiStrategy": "smart",
+      "moves": [
+        {
+          "id": "bite",
+          "name": "Bite",
+          "description": "Deals moderate physical damage.",
+          "type": "PHYSICAL",
+          "effectType": "DAMAGE",
+          "baseValue": 11,
+          "duration": 0
+        },
+        {
+          "id": "web-throw",
+          "name": "Web Throw",
+          "description": "Deals light damage and lowers defense.",
+          "type": "PHYSICAL",
+          "effectType": "DEBUFF_DEFENSE",
+          "baseValue": 5,
+          "duration": 2
+        },
+        {
+          "id": "pounce",
+          "name": "Pounce",
+          "description": "Deals heavy physical damage.",
+          "type": "PHYSICAL",
+          "effectType": "DAMAGE",
+          "baseValue": 18,
+          "duration": 0
+        },
+        {
+          "id": "skitter",
+          "name": "Skitter",
+          "description": "Raises defense for 2 turns.",
+          "type": "STATUS",
+          "effectType": "BUFF_DEFENSE",
+          "baseValue": 5,
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "witch",
+      "name": "Witch",
+      "stats": {
+        "maxHealth": 90,
+        "currentHealth": 90,
+        "attack": 6,
+        "defense": 5,
+        "magic": 15
+      },
+      "experienceReward": 100,
+      "aiStrategy": "smart",
+      "moves": [
+        {
+          "id": "shadow-bolt",
+          "name": "Shadow Bolt",
+          "description": "Deals heavy magic damage.",
+          "type": "MAGIC",
+          "effectType": "DAMAGE",
+          "baseValue": 16,
+          "duration": 0
+        },
+        {
+          "id": "drain-life",
+          "name": "Drain Life",
+          "description": "Deals light magic damage and heals the user.",
+          "type": "MAGIC",
+          "effectType": "DRAIN_LIFE",
+          "baseValue": 8,
+          "duration": 0
+        },
+        {
+          "id": "curse",
+          "name": "Curse",
+          "description": "Lowers attack for 2 turns.",
+          "type": "STATUS",
+          "effectType": "DEBUFF_ATTACK",
+          "baseValue": 5,
+          "duration": 2
+        },
+        {
+          "id": "dark-pact",
+          "name": "Dark Pact",
+          "description": "Raises magic for 2 turns.",
+          "type": "STATUS",
+          "effectType": "BUFF_MAGIC",
+          "baseValue": 6,
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "goblin-mage",
+      "name": "Goblin Mage",
+      "stats": {
+        "maxHealth": 100,
+        "currentHealth": 100,
+        "attack": 7,
+        "defense": 6,
+        "magic": 17
+      },
+      "experienceReward": 120,
+      "aiStrategy": "smart",
+      "moves": [
+        {
+          "id": "firebolt",
+          "name": "Firebolt",
+          "description": "Deals moderate magic damage.",
+          "type": "MAGIC",
+          "effectType": "DAMAGE",
+          "baseValue": 13,
+          "duration": 0
+        },
+        {
+          "id": "arcane-surge",
+          "name": "Arcane Surge",
+          "description": "Raises magic for 2 turns.",
+          "type": "STATUS",
+          "effectType": "BUFF_MAGIC",
+          "baseValue": 6,
+          "duration": 2
+        },
+        {
+          "id": "mana-drain",
+          "name": "Mana Drain",
+          "description": "Deals light magic damage and lowers magic.",
+          "type": "MAGIC",
+          "effectType": "DEBUFF_MAGIC",
+          "baseValue": 5,
+          "duration": 2
+        },
+        {
+          "id": "hex-shield",
+          "name": "Hex Shield",
+          "description": "Raises defense for 2 turns.",
+          "type": "STATUS",
+          "effectType": "BUFF_DEFENSE",
+          "baseValue": 5,
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "dragon",
+      "name": "Dragon",
+      "stats": {
+        "maxHealth": 150,
+        "currentHealth": 150,
+        "attack": 18,
+        "defense": 12,
+        "magic": 20
+      },
+      "experienceReward": 180,
+      "aiStrategy": "smart",
+      "moves": [
+        {
+          "id": "flame-breath",
+          "name": "Flame Breath",
+          "description": "Deals heavy magic damage.",
+          "type": "MAGIC",
+          "effectType": "DAMAGE",
+          "baseValue": 20,
+          "duration": 0
+        },
+        {
+          "id": "claw-swipe",
+          "name": "Claw Swipe",
+          "description": "Deals moderate physical damage.",
+          "type": "PHYSICAL",
+          "effectType": "DAMAGE",
+          "baseValue": 15,
+          "duration": 0
+        },
+        {
+          "id": "intimidate",
+          "name": "Intimidate",
+          "description": "Lowers attack for 2 turns.",
+          "type": "STATUS",
+          "effectType": "DEBUFF_ATTACK",
+          "baseValue": 6,
+          "duration": 2
+        },
+        {
+          "id": "dragon-scales",
+          "name": "Dragon Scales",
+          "description": "Raises defense for 2 turns.",
+          "type": "STATUS",
+          "effectType": "BUFF_DEFENSE",
+          "baseValue": 8,
+          "duration": 2
+        }
+      ]
+    }
+  ]
+}
